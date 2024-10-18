@@ -3,11 +3,11 @@ import { AlertTriangle } from 'lucide-react';
 
 const CustomerNote = () => {
   const notes = [
-    'Chỉ làm dịch vụ với chính chủ',
-    'Phải có thẻ căn cước chính chủ',
-    'Chỉ chuyển khoản vào tài khoản chính chủ',
-    'Phí sẽ thay đổi tùy loại thẻ, thời gian, địa điểm...',
-    'Dịch vụ tại nhà 24/7 là có phí'
+    'Chúng tôi chỉ làm dịch vụ với chính chủ',
+    'Cần có thẻ căn cước chính chủ',
+    'Chỉ chuyển khoản thanh toán vào tài khoản chính chủ',
+    'Phí sẽ được thay đổi tuỳ vào loại thẻ, thời gian, địa điểm...',
+    'Biểu phí chưa bao gồm phí ship 24/7',
   ];
 
   return (

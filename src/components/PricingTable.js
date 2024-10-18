@@ -3,7 +3,7 @@ import React from 'react';
 const PricingTable = function() {
   const pricingData = [
     { range: 'Dưới 10 triệu', priceA: '2%', priceB: '2%' },
-    { range: 'Thẻ Visa, Master', priceA: '1.70%', priceB: '1.70%' },
+    { range: 'Thẻ Visa, Master', priceA: '1.70%', priceB: '1.80%' },
     { range: 'Thẻ JCB', priceA: '2.20%', priceB: '2.50%' },
     { range: '300 triệu trở lên', priceA: 'Liên hệ', priceB: 'Liên hệ' },
     { range: 'Một số dòng thẻ đặc biệt khác', priceA: 'Liên hệ', priceB: 'Liên hệ' },
