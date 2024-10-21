@@ -14,23 +14,25 @@ const App = function() {
       <div id="/" />
       <Header />
       
-      <main className="container mx-auto px-4 py-8">
-      <h1 id="pricingTable" className="text-3xl font-bold text-center text-red-600 mb-8">
-  BẢNG GIÁ DỊCH VỤ THAM KHẢO
-</h1>
+      <main className="container mx-auto px-4 py-8 mt-32"> {/* Added mt-20 to create space for the sticky header */}
+        <h1 id="pricingTable" className="text-3xl font-bold text-center text-red-600 mb-8">
+          BẢNG GIÁ DỊCH VỤ THAM KHẢO
+        </h1>
         <div id="pricingTable">
           <PricingTable />
         </div>
         <div id="commitment">
+          <Commitment />
         </div>
-        <Commitment />
         <div id="customerNote">
           <CustomerNote />
         </div>
       </main>
+
       <div id="footer">
-      <Footer />
+        <Footer />
       </div>
+
       <MessengerIcon /> {/* Include the Messenger icon */}
       <PhoneIcon /> {/* Include the Phone icon */}
       <ZaloIcon /> {/* Include the Zalo icon */}

@@ -1,35 +1,16 @@
-import React, { useEffect, useState } from 'react'; // Import useEffect and useState for scroll handling
+import React from 'react';
 import { Phone } from 'lucide-react';
 import { Link } from 'react-scroll';
 
 const Header = function() {
-  const [isSticky, setIsSticky] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const footer = document.querySelector('footer');
-      if (footer) {
-        const footerTop = footer.getBoundingClientRect().top;
-        if (footerTop <= window.innerHeight) {
-          setIsSticky(true);
-        } else {
-          setIsSticky(true);
-        }
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
-    <header className={`bg-orange-900 text-white py-6 z-50 ${isSticky ? 'sticky top-0' : ''}`}>
+    <header className={`bg-orange-900 text-white py-8 z-50 transition-all duration-300 fixed top-0 w-full`}> {/* Increased py from 6 to 8 */}
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-30" 
+        className="absolute inset-0 bg-cover bg-center opacity-30"
         style={{
           backgroundImage: `url('https://www.greencountryfcu.com/wp-content/uploads/2021/10/credit-card-shopping-620x330-1-1.jpg')`,
+          height: '100%', // Set the height to 100% of the header
+          width: '100%', // Set the width to 100% of the header
         }}
       ></div>
       <div className="container mx-auto px-4 flex justify-between items-center relative">
@@ -38,7 +19,7 @@ const Header = function() {
             to="pricingTable" 
             smooth={true} 
             duration={500}
-            offset={-800}
+            offset={-160} // Adjust the offset as needed
             className="text-xl font-bold bg-orange-700 px-4 py-2 rounded-full shadow-lg hover:bg-orange-600 cursor-pointer transition"
           >
             Bảng giá
@@ -47,7 +28,7 @@ const Header = function() {
             to="commitment" 
             smooth={true} 
             duration={500}
-            offset={-80}
+            offset={-120}
             className="text-xl font-bold bg-orange-700 px-4 py-2 rounded-full shadow-lg hover:bg-orange-600 cursor-pointer transition"
           >
             Dịch vụ
@@ -62,7 +43,6 @@ const Header = function() {
           </Link>
         </nav>
 
-        {/* Whole Box Shaking Animation */}
         <div className="flex items-center justify-center bg-yellow-400 text-orange-900 p-3 rounded-full animate-slow-ring shadow-lg">
           <Phone className="w-10 h-10 mr-3 text-orange-900" />
           <a 
