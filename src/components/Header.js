@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 
 const Header = function() {
   return (
-    <header className={`bg-orange-900 text-white py-8 z-50 transition-all duration-300 fixed top-0 w-full shadow-md`}> {/* Adjusted padding */}
+    <header className={`bg-orange-900 text-white py-8 z-50 transition-all duration-300 fixed top-0 w-full shadow-md`}>
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-30"
         style={{
@@ -13,14 +13,15 @@ const Header = function() {
           width: '100%', // Set the width to 100% of the header
         }}
       ></div>
-      <div className="container mx-auto px-4 flex justify-between items-center relative">
-        <nav className="flex space-x-4 mb-4">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center relative">
+        {/* Navigation Links */}
+        <nav className="flex flex-col md:flex-row mb-4 space-y-2 md:space-y-0 md:space-x-4 w-full">
           <Link 
             to="pricingTable" 
             smooth={true} 
             duration={500}
             offset={-160} // Adjust the offset as needed
-            className="text-lg md:text-xl font-bold bg-orange-700 px-3 py-2 rounded-full shadow-lg hover:bg-orange-600 cursor-pointer transition" // Adjusted padding and font size
+            className="text-lg md:text-xl font-bold bg-orange-700 px-3 py-2 rounded-full shadow-lg hover:bg-orange-600 cursor-pointer transition"
           >
             Bảng giá
           </Link>
@@ -43,11 +44,12 @@ const Header = function() {
           </Link>
         </nav>
 
-        <div className="flex items-center justify-center bg-yellow-400 text-orange-900 p-2 rounded-full animate-slow-ring shadow-lg"> {/* Adjusted padding */}
-          <Phone className="w-8 h-8 mr-2 text-orange-900" /> {/* Adjusted icon size */}
+        {/* Phone Number Container */}
+        <div className="flex items-center justify-center bg-yellow-400 text-orange-900 p-2 rounded-full animate-slow-ring shadow-lg mt-4 md:mt-0"> 
+          <Phone className="w-8 h-8 mr-2 text-orange-900" />
           <a 
             href="tel:0985463501" 
-            className="text-xl md:text-3xl font-bold whitespace-nowrap" // Added whitespace-nowrap to prevent wrapping
+            className="text-xl md:text-3xl font-bold whitespace-nowrap" 
           >
             0985 463 501
           </a>
