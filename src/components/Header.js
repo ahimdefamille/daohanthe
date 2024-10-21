@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 
 const Header = function() {
   return (
-    <header className={`bg-orange-900 text-white py-8 z-50 transition-all duration-300 fixed top-0 w-full`}> {/* Increased py from 6 to 8 */}
+    <header className={`bg-orange-900 text-white py-8 z-50 transition-all duration-300 fixed top-0 w-full shadow-md`}> {/* Adjusted padding */}
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-30"
         style={{
@@ -20,7 +20,7 @@ const Header = function() {
             smooth={true} 
             duration={500}
             offset={-160} // Adjust the offset as needed
-            className="text-xl font-bold bg-orange-700 px-4 py-2 rounded-full shadow-lg hover:bg-orange-600 cursor-pointer transition"
+            className="text-lg md:text-xl font-bold bg-orange-700 px-3 py-2 rounded-full shadow-lg hover:bg-orange-600 cursor-pointer transition" // Adjusted padding and font size
           >
             Bảng giá
           </Link>
@@ -29,7 +29,7 @@ const Header = function() {
             smooth={true} 
             duration={500}
             offset={-120}
-            className="text-xl font-bold bg-orange-700 px-4 py-2 rounded-full shadow-lg hover:bg-orange-600 cursor-pointer transition"
+            className="text-lg md:text-xl font-bold bg-orange-700 px-3 py-2 rounded-full shadow-lg hover:bg-orange-600 cursor-pointer transition"
           >
             Dịch vụ
           </Link>
@@ -37,17 +37,17 @@ const Header = function() {
             to="footer" 
             smooth={true} 
             duration={500} 
-            className="text-xl font-bold bg-orange-700 px-4 py-2 rounded-full shadow-lg hover:bg-orange-600 cursor-pointer transition"
+            className="text-lg md:text-xl font-bold bg-orange-700 px-3 py-2 rounded-full shadow-lg hover:bg-orange-600 cursor-pointer transition"
           >
             Liên hệ
           </Link>
         </nav>
 
-        <div className="flex items-center justify-center bg-yellow-400 text-orange-900 p-3 rounded-full animate-slow-ring shadow-lg">
-          <Phone className="w-10 h-10 mr-3 text-orange-900" />
+        <div className="flex items-center justify-center bg-yellow-400 text-orange-900 p-2 rounded-full animate-slow-ring shadow-lg"> {/* Adjusted padding */}
+          <Phone className="w-8 h-8 mr-2 text-orange-900" /> {/* Adjusted icon size */}
           <a 
             href="tel:0985463501" 
-            className="text-3xl font-bold"
+            className="text-xl md:text-3xl font-bold whitespace-nowrap" // Added whitespace-nowrap to prevent wrapping
           >
             0985 463 501
           </a>
