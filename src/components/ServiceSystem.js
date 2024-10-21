@@ -21,7 +21,7 @@ const ServiceSystem = function() {
 
   return (
     <div className="mb-8">
-      <h2 className="text-2xl font-bold text-center mb-4">HỆ THỐNG CƠ SỞ DỊCH VỤ</h2>
+      <h2 className="text-2xl font-bold text-center mb-4">ĐỊA CHỈ VĂN PHÒNG</h2>
       <div className="space-y-4">
         {locations.map((location, index) => (
           <div key={index}>

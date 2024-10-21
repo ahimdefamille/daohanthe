@@ -3,7 +3,7 @@ import React from 'react';
 const PhoneIcon = () => {
   return (
     <a
-      href="tel:+84968160997" // Replace with your phone number
+      href="tel:0985463501" // Replace with your phone number
       className="fixed bottom-8 right-4 p-3 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300"
     >
       <img

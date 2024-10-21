@@ -3,7 +3,7 @@ import React from 'react';
 const ZaloIcon = () => {
   return (
     <a
-      href="tel:+84968160997" // Replace with your Zalo link
+      href="https://zalo.me/0985463501" // Replace with your Zalo link
       className="fixed bottom-40 right-4 p-3 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300"
     >
       <img

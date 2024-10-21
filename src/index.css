@@ -17,3 +17,23 @@
     @apply max-w-6xl mx-auto px-4;
   }
 }
+
+@keyframes slow-ringing {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.animate-slow-ring {
+  animation: slow-ringing 1s ease-in-out infinite; /* Slowed down the animation to 1s */
+}
+
+/* Optional: Additional hover effect for phone number */
+.animate-slow-ring:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+
+
