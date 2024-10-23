@@ -7,6 +7,8 @@ import Footer from './components/Footer';
 import MessengerIcon from './components/MessengerIcon'; // Import your MessengerIcon component
 import PhoneIcon from './components/PhoneIcon'; // Import your PhoneIcon component
 import ZaloIcon from './components/ZaloIcon'; // Import your ZaloIcon component
+import PhoneContact from './components/PhoneContact'; // Import your ZaloIcon component
+
 
 const App = function() {
   return (
@@ -36,6 +38,7 @@ const App = function() {
       <MessengerIcon /> {/* Include the Messenger icon */}
       <PhoneIcon /> {/* Include the Phone icon */}
       <ZaloIcon /> {/* Include the Zalo icon */}
+      <PhoneContact /> 
     </div>
   );
 };

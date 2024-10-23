@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="flex flex-wrap justify-between items-start">
           {/* Left section - Contact Information */}
           <div className="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
-            <h3 className="text-2xl font-bold mb-4">Liên hệ ngay</h3>
+            <h3 className="text-2xl font-bold mb-4">LIÊN HỆ NGAY</h3>
             <Button
               variant="outline"
               size="lg"
